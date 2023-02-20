@@ -1,0 +1,27 @@
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  fill: #8e8f99;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--secondary-accent-color);
+    fill: var(--secondary-accent-color);
+  }
+}

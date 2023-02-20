@@ -1,0 +1,113 @@
+.feature-list {
+  @media screen and (max-width: 767px) {
+    .item:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .item:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+
+    .item:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: start;
+  }
+}
+
+.feature-text {
+  font-weight: 500;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+  }
+}
+
+.feature-item {
+  justify-content: center;
+  margin-bottom: 72px;
+
+  &::before {
+    display: block;
+    content: '';
+    background-color: var(--secondary-bg-color);
+    height: 112px;
+    margin-bottom: 8px;
+    background-size: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 356px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 264px;
+    margin-right: 24px;
+  }
+}
+
+.feature-item:nth-child(1)::before {
+  background-image: url(../images/icons/group.svg);
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.feature-item:nth-child(2)::before {
+  background-image: url(../images/icons/clock.svg);
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.feature-item:nth-child(3)::before {
+  background-image: url(../images/icons/diagram.svg);
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.feature-item:nth-child(4)::before {
+  background-image: url(../images/icons/astronaut.svg);
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}

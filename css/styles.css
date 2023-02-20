@@ -101,7 +101,6 @@ button {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
 }
 
 /* Header */
@@ -170,7 +169,7 @@ header .link {
   margin-left: auto;
 }
 
-.contacts .item + .item {
+.contacts .item {
   margin-left: 40px;
 }
 
@@ -205,6 +204,13 @@ header .link {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hero-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero-title {
@@ -283,15 +289,13 @@ header .link {
   background-image: url(../images/icons/astronaut.svg);
 }
 
-/* "What are we doing" and team sections */
+/* Skills section */
 
-.skills-list,
-.team-list {
+.skills-list {
   display: flex;
 }
 
-.skills-item,
-.team-item {
+.skills-item {
   margin-right: 24px;
 }
 
@@ -312,7 +316,13 @@ header .link {
   padding-bottom: 32px;
 }
 
+.team-list {
+  display: flex;
+}
+
 .team-item {
+  margin-right: 24px;
+
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -352,7 +362,7 @@ header .link {
   fill: var(--secondary-accent-color);
 }
 
-.customer-icon: {
+.customer-icon {
   fill: currentColor;
 }
 

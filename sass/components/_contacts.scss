@@ -1,0 +1,49 @@
+.contacts {
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  .item {
+    margin-left: 40px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+}
+
+.contacts-address {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.contacts-mail {
+  margin-bottom: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-phone {
+    margin-left: 40px;
+  }
+}
+
+.contacts-link {
+  text-decoration: none;
+  font-style: normal;
+  display: block;
+  color: var(--secondary-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-accent-color);
+  }
+}
