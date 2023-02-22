@@ -8,8 +8,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--white-color);
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -40,9 +40,19 @@
         ),
         url(../images/hero-tablet@2x.jpg);
     }
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 112px;
+      padding-bottom: 108px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 188px;
+      padding-bottom: 188px;
+    }
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
