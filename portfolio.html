@@ -16,33 +16,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="page-header">
-      <div class="container header-flex">
+      <div class="page-header-container container">
         <nav class="header-flex">
           <a href="./index.html" class="logo link"> <span>Web</span>Studio</a>
           <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link">Studio</a>
-            </li>
+            <li class="item"><a href="./index.html" class="link">Studio</a></li>
             <li class="item">
               <a href="./portfolio.html" class="link current">Portfolio</a>
             </li>
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
-        <address class="contacts">
+        <button
+          type="button"
+          class="mobile-menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-open__icon" width="32" height="22">
+            <use href="./images/icons/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
+
+        <address class="contacts-address">
           <ul class="contacts list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link"
+            <li class="contacts-mail">
+              <a href="mailto:info@devstudio.com" class="contacts-link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="item">
-              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+            <li class="contacts-phone">
+              <a href="tel:+110001111111" class="contacts-link"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
         </address>
@@ -81,13 +93,13 @@
                         ./images/portfolio/banking-app-desktop@2x.webp 2x
                       "
                       media="(min-width: 1200px)"
+                      type="image/webp"
                     />
                     <source
                       srcset="
                         ./images/portfolio/banking-app-desktop.jpg    1x,
                         ./images/portfolio/banking-app-desktop@2x.jpg 2x
                       "
-                      type="image/webp"
                       media="(min-width: 1200px)"
                     />
                     <source
@@ -123,8 +135,6 @@
                     <img
                       src="./images/portfolio/mobile/banking-app-mobile.jpg"
                       alt="banking app"
-                      width="360"
-                      height="300"
                     />
                   </picture>
 
@@ -192,8 +202,6 @@
                     <img
                       src="./images/portfolio/mobile/payment-mobile.jpg"
                       alt="phone"
-                      width="360"
-                      height="300"
                     />
                   </picture>
                   <p class="overlay">
@@ -259,8 +267,6 @@
                     />
                     <img
                       src="./images/portfolio/mobile/meditation-app-mobile.jpg"
-                      width="360"
-                      height="300"
                     />
                   </picture>
                   <p class="overlay">
@@ -328,8 +334,6 @@
                     <img
                       src="./images/portfolio/mobile/taxi-service-mobile.jpg"
                       alt="car interior"
-                      width="360"
-                      height="300"
                     />
                   </picture>
                   <p class="overlay">
@@ -397,8 +401,6 @@
                     <img
                       src="./images/portfolio/mobile/screen-illustrations-mobile.jpg"
                       alt="screen"
-                      width="360"
-                      height="300"
                     />
                   </picture>
                   <p class="overlay">
@@ -466,8 +468,6 @@
                     <img
                       src="./images/portfolio/mobile/online-courses-mobile.jpg"
                       alt="girl"
-                      width="360"
-                      height="300"
                     />
                   </picture>
                   <p class="overlay">
@@ -535,8 +535,6 @@
                     <img
                       src="./images/portfolio/mobile/instagram-stories-mobile.jpg"
                       alt="instagram"
-                      width="360"
-                      height="300"
                     />
                   </picture>
                   <p class="overlay">
@@ -606,8 +604,6 @@
                     <img
                       src="./images/portfolio/mobile/organic-food-mobile.jpg"
                       alt="vegetables"
-                      width="360"
-                      height="300"
                     />
                   </picture>
                   <p class="overlay">
@@ -675,8 +671,6 @@
                     <img
                       src="./images/portfolio/mobile/fresh-coffee-mobile.jpg"
                       alt="coffee"
-                      width="360"
-                      height="300"
                     />
                   </picture>
                   <p class="overlay">
@@ -706,7 +700,7 @@
           </p>
         </div>
         <div class="footer-sm">
-          <h3 class="text">Social media</h3>
+          <h3 class="sm-text">Social media</h3>
           <ul class="sm-list list">
             <li class="sm-item">
               <a href="https://www.instagram.com/" class="sm-link">
@@ -745,7 +739,7 @@
           </ul>
         </div>
         <div class="fotter-form-subscribe">
-          <p class="footer-form-text text">Subscribe</p>
+          <p class="footer-form-text sm-text">Subscribe</p>
           <form action="" class="footer-form">
             <input
               type="email"
@@ -763,5 +757,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
